@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "photoPath": "/img/cups/000088311/cup.png",
+      "article": "000088311",
+      "description": "Кружка для сублимации, А класс, премиум, белая",
+      "props": [
+        {"name": "Объем", "value": "330 мл"},
+        {"name": "Диаметр", "value": "8,2 см"}
+      ],
+      "price": 59
+    },
+    {
+      "photoPath": "/img/cups/000088311/cup.png",
+      "article": "000018117",
+      "description": "Кружка для сублимации, увеличенной ёмкости белая",
+      "props": [
+        {"name": "Объем", "value": "425 мл"},
+        {"name": "Диаметр", "value": "8,2 см"}
+      ],
+      "price": 185
+    },
+    {
+      "photoPath": "/img/cups/000018132/cup.png",
+      "article": "000018132",
+      "description": "Кружка для сублимации, конусная «Латте», белая",
+      "price": 126
+    },
+    {
+      "photoPath": "/img/cups/000088332/cup.png",
+      "article": "000088332",
+      "description": "Кружка для сублимации, белая, цветная внутри",
+      "props": [
+        {"name": "Объем", "value": "330 мл"},
+        {"name": "Диаметр", "value": "8,2 см"}
+      ],
+      "price": 102,
+      "baseColor" : "red",
+      "colors": [
+        {"color" : "#cb2026", "photo": "/img/cups/000088332/cup.png", "name": "red"},
+        {"color" : "#fff200", "photo": "/img/cups/000088332/colors/yellow.png", "name": "yellow"},
+        {"color" : "#00a651", "photo": "/img/cups/000088332/colors/green.png", "name": "green"},
+        {"color" : "#00aeef", "photo": "/img/cups/000088332/colors/blue.png", "name": "blue"},
+        {"color" : "#23221d", "photo": "/img/cups/000088332/colors/black.png", "name": "black"}
+      ]
+    },
+    {
+      "photoPath": "/img/cups/000067154/cup.png",
+      "article": "000067154",
+      "description": "Кружка для сублимации, белая, цветная внутри",
+      "props": [
+        {"name": "Объем", "value": "330 мл"},
+        {"name": "Диаметр", "value": "8,2 см"}
+      ],
+      "price": 102,
+      "baseColor" : "red",
+      "colors": [
+        {"color" : "#cb2026", "photo": "/img/cups/000067154/cup.png", "name": "red"},
+        {"color" : "#fff200", "photo": "/img/cups/000067154/colors/yellow.png", "name": "yellow"},
+        {"color" : "#00a651", "photo": "/img/cups/000067154/colors/green.png", "name": "green"},
+        {"color" : "#00aeef", "photo": "/img/cups/000067154/colors/blue.png", "name": "blue"},
+        {"color" : "#23221d", "photo": "/img/cups/000067154/colors/black.png", "name": "black"}
+      ]
+    },
+    {
+      "photoPath": "/img/cups/000018136/cup.png",
+      "article": "000018136",
+      "description": "Кружка для сублимации, хамелеон, конусная «Латте», чёрная",
+      "price": 117
+    }
+  ]
+}
