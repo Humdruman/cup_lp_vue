@@ -13,7 +13,8 @@ export default new Vuex.Store({
         currentTableProduct: {},
         productList: [],
         basket: {},
-        popupMsg: ''
+        popupMsg: '',
+        totalPrice: 0
     },
     mutations: {
         SHOW_MODAL_WINDOW(state, isShow) {
@@ -28,6 +29,9 @@ export default new Vuex.Store({
                 modalFormName = 'the-popup-form-' + modalFormName;
             }
             state.currentModalForm = modalFormName;
+        },
+        SET_TOTAL_PRICE(state, price) {
+            state.totalPrice
         },
         SET_CURRENT_TABLE_PRODUCT(state, product) {
             state.currentTableProduct = product;

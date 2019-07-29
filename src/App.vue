@@ -6,7 +6,7 @@
         <transition name="popup">
             <the-popup-window v-show="isShowPopup"></the-popup-window>
         </transition>
-        <div v-if="!isShowPopupTable">
+        <div v-show="!isShowPopupTable">
             <the-header></the-header>
             <the-wrapper></the-wrapper>
             <the-footer></the-footer>
@@ -51,6 +51,7 @@
         margin: 0;
         outline: none;
     }
+
     body {
         font-family: Roboto,sans-serif;
     }

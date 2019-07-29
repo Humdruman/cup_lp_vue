@@ -16,8 +16,7 @@
                </div>
                <div class="payment-container">
                    <img src="@/assets/img/payment-2.png">
-                   <div class="text">Безналичный
-                       расчёт</div>
+                   <div class="text">Сбербанк Онлайн</div>
                </div>
 
            </div>

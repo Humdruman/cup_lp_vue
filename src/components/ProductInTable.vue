@@ -59,6 +59,7 @@
         methods: {
             closeTable(){
                 this.$store.dispatch('showPopupTable', false);
+                setTimeout(this.scroll, 1000);
             },
             setCount() {
                 let input = this.inputCount;
@@ -71,6 +72,12 @@
                 }
 
                 this.count = input;
+            },
+            scroll() {
+                document.querySelector('a[name~="products"]').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
             }
         },
         computed: {

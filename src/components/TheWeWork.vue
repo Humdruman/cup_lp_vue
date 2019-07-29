@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="circle-container" data-index="6">
-                    <div class="circle" @click="openPopupMessage(2)">
+                    <div class="circle" @click="openPopupMessage(3)">
                         <img src="@/assets/img/circle6.svg">
                     </div>
                     <div class="number">6</div>

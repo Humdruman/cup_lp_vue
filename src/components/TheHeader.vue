@@ -6,9 +6,9 @@
                 <div class="contact-description">
                     Кружки с вашей символикой
                 </div>
-                <div class="contact-number">
+                <a class="contact-number" href="tel:+7(495)199-56-14">
                     +7 (495) 199-56-14
-                </div>
+                </a>
             </div>
         </div>
         <the-header-navigation></the-header-navigation>
@@ -68,6 +68,7 @@
         font-family: 'Roboto Black', sans-serif;
         font-size: 32px;
         font-weight: 900;
+        text-decoration: none;
         text-transform: uppercase;
     }
 </style>

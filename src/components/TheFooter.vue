@@ -7,7 +7,7 @@
                 <div class="address">
                     Адрес: г. Москва, ул. Флотская, д. 5, корп. А
                 </div>
-                <a href="mailto:Cups@laboprint.ru" class="mail">E-mail: Cups@laboprint.ru</a>
+                <a href="mailto:Cups@laboprint.ru" class="mail">e-mail: cups@laboprint.ru</a>
                 <a href='tel:+74951995614'class="number">+7 (495) 199-56-14</a>
                 <base-button @click="openCallbackForm();">заказать звонок</base-button>
             </div>

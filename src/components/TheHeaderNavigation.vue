@@ -89,6 +89,7 @@
     .slogan {
         font-family: 'Roboto Black', sans-serif;
         font-size: 65px;
+        color: #333333;
         text-transform: uppercase;
         width: 377px;
         line-height: 72.99px;

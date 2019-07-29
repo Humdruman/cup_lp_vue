@@ -79,6 +79,7 @@
         width: 100%;
         background: white;
         height: 1600px;
+        background: url('../assets/img/big_chemistry_bg.png') no-repeat;
     }
 
     .container {
@@ -108,6 +109,9 @@
         }
 
         .product {
+            &.row{
+                background: white;
+            }
             .cl-1 {
                 cursor: pointer;
             }

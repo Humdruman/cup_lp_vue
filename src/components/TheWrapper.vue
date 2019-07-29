@@ -60,7 +60,7 @@
         }
         .button {
             align-self: flex-end;
-            margin-right: 152px;
+            margin-right: 92px;
         }
     }
     .products-wrapper {
