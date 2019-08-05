@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="container">
+        <div class="container-footer">
             <the-header-logo class="white-text"></the-header-logo>
             <div class="contact-container">
                 <a name="contact"></a>
@@ -38,7 +38,7 @@
         height: 452px;
         padding-top: 40px;
     }
-    .container {
+    .container-footer {
         max-width: $max-width;
         position: relative;
         display: flex;

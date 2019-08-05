@@ -1,6 +1,6 @@
 <template>
    <div class="layout">
-       <div class="container">
+       <div class="container-pay">
            <a name="pay"></a>
            <h2 class="h2">
                Способы оплаты
@@ -61,7 +61,7 @@
         text-transform: uppercase;
         letter-spacing: 0.4px
     }
-    .container {
+    .container-pay {
         max-width: $max-width;
         display: flex;
         height: 100%;

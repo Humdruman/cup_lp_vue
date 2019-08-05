@@ -1,6 +1,6 @@
 <template>
     <div class="navigation">
-        <div class="container">
+        <div class="container-menu">
             <nav>
                 <ul class="menu">
                     <li class="menu-item" v-for="link, index in links">
@@ -52,7 +52,7 @@
         border-bottom: 1px solid #ffffff;
     }
 
-    .container {
+    .container-menu {
         max-width: $max-width;
         margin: 0 auto;
         width: 100%;

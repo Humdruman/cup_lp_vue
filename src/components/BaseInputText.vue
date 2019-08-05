@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-input">
         <span class="field-description">
             <slot></slot>
         </span>
@@ -34,7 +34,7 @@
 
 <style scoped>
 
-    .container {
+    .container-input {
         display: flex;
         flex-direction: column;
     }

@@ -14,7 +14,6 @@
         <form class="form" action="#" @submit.prevent="submit();" v-show="!isSuccess">
             <div class="field-container">
                 <base-input-text placeholder="Иван Иванов" name="name"  required v-model="formData.name">Имя*</base-input-text>
-                <base-input-text placeholder="example@mail.ru" name="mail"  v-model="formData.name">Email</base-input-text>
                 <base-input-text placeholder="Телефон" name="phone" required v-model="formData.phone">Телефон*</base-input-text>
             </div>
             <base-button class="form__button"> </base-button>

@@ -16,6 +16,7 @@
 
 <script>
     import './assets/fonts.scss';
+    import './assets/bootstrap.min.css';
     import ThePopupWindow from './components/ThePopupWindow.vue';
     import TheHeader from './components/TheHeader.vue';
     import TheWrapper from './components/TheWrapper.vue';

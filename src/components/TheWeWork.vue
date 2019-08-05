@@ -1,6 +1,6 @@
 <template>
     <div class="layout">
-        <div class="container">
+        <div class="container-work">
             <a name="we-work"></a>
             <h2 class="h2">Как мы работаем</h2>
             <div class="circles-wrapper">
@@ -149,10 +149,10 @@
 
     .layout {
         background-color: #f5f5f5;
-        height: 1824px;
+        height: 1924px;
     }
 
-    .container {
+    .container-work {
         margin: 0 auto;
         padding-top: 45px;
         width: $max-width;

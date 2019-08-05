@@ -27,7 +27,13 @@
                     </div>
                 </div>
                 <div class="price-wrap">
-                    от {{calcPrice}} р./шт c печатью
+                    <span v-if="!isInputCalc()">
+                         от {{price}} р./шт c печатью
+                    </span>
+                    <span v-else="">
+                        от {{calcPrice}} р. за {{count}} шт.
+                    </span>
+
                 </div>
             </div>
             <div class="calc-price">
@@ -67,6 +73,12 @@
             },
             calcPrice() {
                 return this.product.price * this.count;
+            },
+            price() {
+                return this.product.price;
+            },
+            count() {
+                return this.product.count;
             }
         },
         methods: {
@@ -90,6 +102,9 @@
             showPopupTable(){
                 this.$store.dispatch('showPopupTable', true);
                 this.$store.dispatch('setCurrentProductTable', this.product);
+            },
+            isInputCalc() {
+                return this.count > 1;
             }
         }
     }
