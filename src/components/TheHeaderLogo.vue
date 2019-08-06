@@ -25,16 +25,21 @@
         align-items: center;
     }
 
+    .logo {
+        width: 71.25px;
+        height: 67.5px;
+    }
+
     .logo-text-container {
         font-family: 'Comfortaa', sans-serif;
         color: #333333;
         margin-left: 22px;
-        font-size: 20px;
+        font-size: 0.93rem;
         letter-spacing: -0.29px;
     }
 
     .logo-text:first-child {
-        font-size: 40px;
+        font-size: 1.9rem;
     }
 
     .white-text {

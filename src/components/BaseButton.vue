@@ -12,12 +12,12 @@
 
 <style lang="scss">
     .button {
-        width: 290px;
+        width: 17.5rem;
         height: 40px;
         border-radius: 20px;
         font-family: Roboto, sans-serif;
-        font-size: 14px;
-        line-height: 38px;
+        font-size: 0.875rem;
+        line-height: 28.5px;
         text-align: center;
         border: none;
         outline: none;

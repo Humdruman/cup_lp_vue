@@ -42,8 +42,8 @@
 <style lang="scss" scoped>
     @import "../assets/varible";
     .layout {
-        padding-top: 50px;
-        height: 735px;
+        padding-top: 37.5px;
+        height: 551.25px;
         position: relative;
     }
     .bg {
@@ -55,9 +55,9 @@
         color: #cb2026;
         text-align: center;
         font-family: Comfortaa, sans-serif;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
-        line-height: 68px;
+        line-height: 51px;
         text-transform: uppercase;
         letter-spacing: 0.4px
     }
@@ -69,39 +69,47 @@
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
+
+    }
+    .payment-container {
+        width: 124.5px;
+        img {
+            width: 124.5px;
+            height: 124.5px;
+        }
     }
     .wrapper{
         display: flex;
         flex-direction: row;
-        height: 218px;
-        width: 751px;
+        height: 163.5px;
+        width: 563.25px;
         position: relative;
         z-index: 1;
     }
     .middle-container {
         text-align: center;
-        height: 74px;
+        height: 55.5px;
         align-self: flex-start;
-        width: 426px;
+        width: 319.5px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding-bottom: 10px;
+        padding-bottom: 0.75px;
         box-sizing: border-box;
-        border-bottom: 5px solid #333333;
+        border-bottom: 3.75px solid #333333;
         font-weight: 500;
         font-family: Roboto, sans-serif;
         color: #333332;
-        font-size: 20px;
+        font-size: 15px;
     }
     .arrow {
         position: absolute;
-        bottom: 37px;
+        bottom: 27.75px;
         cursor: pointer;
         left: 0;
         z-index: 10;
-        width: 92px;
-        height: 40px;
+        width: 69px;
+        height: 30px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;

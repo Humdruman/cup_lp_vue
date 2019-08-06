@@ -45,8 +45,8 @@
     .color {
         display: block;
         position: relative;
-        width: 17px;
-        height: 17px;
+        width: 12.75px;
+        height: 12.75px;
         &__input {
             position: absolute;
             cursor: pointer;

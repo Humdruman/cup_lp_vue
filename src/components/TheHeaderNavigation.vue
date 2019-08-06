@@ -64,6 +64,13 @@
         padding: 23px 0 33px 0;
     }
 
+    .menu-figure {
+        width: 7.875rem;
+        height: 1.875rem;
+        object-fit: contain;
+
+    }
+
     .menu {
         display: flex;
         flex-direction: row;
@@ -78,7 +85,9 @@
     .menu-link {
         text-decoration: none;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 0.9rem;
+        text-align: center;
+        white-space: nowrap;
         color: #333332;
         font-family: 'Roboto', sans-serif;
         &:hover {
@@ -88,7 +97,7 @@
 
     .slogan {
         font-family: 'Roboto Black', sans-serif;
-        font-size: 65px;
+        font-size: 3rem;
         color: #333333;
         text-transform: uppercase;
         width: 377px;

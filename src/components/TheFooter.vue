@@ -35,7 +35,7 @@
     .footer {
         background-color: #333333;
         width: 100%;
-        height: 452px;
+        height: 339px;
         padding-top: 40px;
     }
     .container-footer {
@@ -50,28 +50,28 @@
         }
     }
     .contact-container {
-        width: 545px;
-        margin: 52px 0 0 42px;
+        width: 408.75px;
+        margin: 39px 0 0 31.5px;
         display: flex;
         flex-direction: column;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 15px;
         a {
             color: #ffffff;
             text-decoration: none;
         }
         .number {
-            margin: 20px 0 40px 0;
-            font-size: 32px;
+            margin: 15px 0 30px 0;
+            font-size: 24px;
             text-transform: uppercase;
         }
     }
     .cup {
         position: absolute;
-        top: -220px;
+        top: -165px;
         right: 0;
-        width: 556px;
-        height: 547px;
+        width: 417px;
+        height: 410.25px;
     }
 
 </style>

@@ -149,12 +149,12 @@
 
     .layout {
         background-color: #f5f5f5;
-        height: 1924px;
+        height: 1443px;
     }
 
     .container-work {
         margin: 0 auto;
-        padding-top: 45px;
+        padding-top: 33.75px;
         width: $max-width;
     }
 
@@ -162,28 +162,28 @@
         color: #cb2026;
         text-align: center;
         font-family: Comfortaa, sans-serif;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
-        line-height: 68px;
+        line-height: 51px;
         text-transform: uppercase;
         letter-spacing: 0.4px;
     }
 
     .circles-wrapper {
-        margin-top: 113px;
+        margin-top: 84.75px;
         width: 100%;
         position: relative;
     }
 
     .circle {
-        width: 166px;
-        height: 166px;
+        width: 124.5px;
+        height: 124.5px;
         cursor: pointer;
     }
 
     .number {
         font-family: Comfortaa, sans-serif;
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 400;
         color: #333333;
     }
@@ -191,7 +191,7 @@
     .text {
         font-family: "Roboto", sans-serif;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         color: #333333;
         font-weight: 400;
         .bold {
@@ -205,17 +205,17 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 274px;
+            width: 205.5px;
             .number {
-                margin: 18px 0;
+                margin: 13.5px 0;
             }
         }
         &[data-index~='2'] {
             display: flex;
-            width: 462px;
+            width: 346.5px;
             position: absolute;
-            right: 50px;
-            top: 120px;
+            right: 37.5px;
+            top: 90px;
             flex-direction: row;
             .text-column {
                 display: flex;
@@ -225,7 +225,7 @@
                 }
             }
             .text {
-                width: 291px;
+                width: 218.25px;
             }
             .arrow-container {
                 position: relative;
@@ -233,14 +233,14 @@
         }
         &[data-index~='3'] {
             display: flex;
-            width: 355px;
+            width: 266.25px;
             position: absolute;
-            right: 650px;
-            top: 395px;
+            right: 487.5px;
+            top: 296.25px;
             flex-direction: column;
             align-items: center;
             .number {
-                margin: 18px 0;
+                margin: 13.5px 0;
             }
             .arrow-container {
                 position: relative;
@@ -248,14 +248,14 @@
         }
         &[data-index~='4'] {
             display: flex;
-            width: 315px;
+            width: 236.25px;
             position: absolute;
-            right: 140px;
-            top: 495px;
+            right: 105px;
+            top: 371.25px;
             flex-direction: column;
             align-items: center;
             .number {
-                margin: 18px 0;
+                margin: 13.5px 0;
             }
             .arrow-container {
                 position: relative;
@@ -263,14 +263,14 @@
         }
         &[data-index~='5'] {
             display: flex;
-            width: 230px;
+            width: 172.5px;
             position: absolute;
-            left: 165px;
-            top: 865px;
+            left: 123.75px;
+            top: 648.75px;
             flex-direction: column;
             align-items: center;
             .number {
-                margin-top: 18px;
+                margin-top: 13.5px;
             }
             .arrow-container {
                 position: relative;
@@ -278,14 +278,14 @@
         }
         &[data-index~='6'] {
             display: flex;
-            width: 230px;
+            width: 172.5px;
             position: absolute;
-            right: 260px;
-            top: 1020px;
+            right: 195px;
+            top: 765px;
             flex-direction: column;
             align-items: center;
             .number {
-                margin-top: 18px;
+                margin-top: 13.5px;
             }
             .arrow-container {
                 position: relative;
@@ -298,34 +298,45 @@
     }
 
     .arrow-1 {
-        top: 85px;
-        left: 215px;
-
+        top: 63.75px;
+        left: 161.25px;
+        width: 300px;
+        height: 82.5px;
     }
 
     .arrow-2 {
-        top: -70px;
-        left: -385px;
+        top: -52.5px;
+        left: -288.75px;
+        width: 175.5px;
+        height: 127.5px;
     }
 
     .arrow-3 {
-        top: -28px;
-        right: 280px;
+        top: -21px;
+        right: 210px;
+        width: 60.75px;
+        height: 131.25px;
     }
 
     .arrow-4 {
-        top: -330px;
-        left: 100px;
+        top: -247.5px;
+        left: 75px;
+        width: 221.25px;
+        height: 72px;
     }
 
     .arrow-5 {
-        top: -280px;
-        left: -480px;
+        top: -210px;
+        left: -360px;
+        width: 314.25px;
+        height: 199.5px;
     }
 
     .arrow-6 {
-        top: -280px;
-        left: 69px;
+        top: -210px;
+        left: 51.75px;
+        width: 227.25px;
+        height: 101.25px;
     }
 
 </style>

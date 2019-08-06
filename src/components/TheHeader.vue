@@ -59,14 +59,14 @@
 
     .contact-description{
         color: #333333;
-        font-size: 20px;
+        font-size: 0.9rem;
         letter-spacing: 0.4px;
     }
 
     .contact-number {
         color: #cb2026;
         font-family: 'Roboto Black', sans-serif;
-        font-size: 32px;
+        font-size: 1.6rem;
         font-weight: 900;
         text-decoration: none;
         text-transform: uppercase;

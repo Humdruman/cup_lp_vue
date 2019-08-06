@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="middle-wrapper">
             <div class="cup-wrap">
-                <img src="@/assets/img/cup-main.png">
+                <img src="@/assets/img/cup-main.png" class="cup">
             </div>
             <base-button @click.native="openModalWindow('callback')">заказать звонок</base-button>
         </div>
@@ -55,17 +55,21 @@
         margin: 0 auto;
         .cup-wrap {
             position: absolute;
-            bottom: -145px;
-            left: 35px;
+            bottom: 0;
+            left: 0;
+        }
+        .cup {
+            width: 24.3rem;
+            height: 28.17rem;
         }
         .button {
             align-self: flex-end;
-            margin-right: 92px;
+            margin-right: 95px;
         }
     }
     .products-wrapper {
         background: url('../assets/img/big_chemistry_bg.png') no-repeat;
-        padding-top: 240px;
+        padding-top: 180px;
         width: 100%;
     }
 
@@ -73,10 +77,10 @@
         text-align: center;
         color: #cb2026;
         font-family: Comfortaa,sans-serif;
-        font-size: 40px;
+        font-size: 1.875rem;
         font-weight: 400;
         text-transform: uppercase;
-        margin-bottom: 70px;
+        margin-bottom: 3.28rem;
     }
 
     .products-container {
@@ -85,7 +89,7 @@
         flex-flow: row wrap;
         margin: 0 auto;
         .product {
-            margin: 0 28px 28px 0;
+            margin: 0 21px 21px 0;
             &:nth-child(4n){
                 margin-right: 0;
             }

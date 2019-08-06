@@ -112,65 +112,65 @@
 
 <style lang="scss" scoped>
     .product {
-        width: 264px;
-        height: 595px;
+        width: 12.375rem;
+        height: 28.89rem;
         background-color: #ffffff;
         border: 1px solid #333333;
         box-shadow: 0 1px 1px rgba(1, 2, 2, 0.27);
         border-radius: 4px;
         .image {
-            width: 264px;
-            height: 264px;
+            width: 196px;
+            height: 196px;
         }
         .image-wrapper {
-            width: 264px;
+            width: 12.375rem;
             cursor: pointer;
-            height: 264px;
+            height: 12.37rem;
             border-bottom: 1px solid #858585;
         }
         .info-wrap {
             display: flex;
             position: relative;
             flex-direction: column;
-            padding: 29px 0 0 22px;
+            padding: 21.75px 0 0 16.5px;
         }
         .article-wrap {
             position: absolute;
             align-self: center;
-            top: -12px;
-            line-height: 20px;
-            width: 167px;
+            top: -9px;
+            line-height: 15px;
+            width: 7.8rem;
             font-family: Roboto, sans-serif;
-            height: 20px;
+            height: 0.9rem;
             border-radius: 10px;
             border: 1px solid #999999;
             color: #333333;
-            font-size: 11px;
+            font-size: 0.5rem;
             text-align: center;
             background-color: #ffffff;
         }
 
         .description {
             font-family: Roboto, sans-serif;
-            font-size: 14px;
+            font-size: 0.66rem;
             font-weight: bold;
             color: #333333;
         }
 
         .properties-container {
             position: relative;
-            margin-top: 45px;
-            font-size: 14px;
-            height: 100px;
+            margin-top: 33.75px;
+            font-size: 0.66rem;
+            height: 85px;
             color: #333333;
             font-family: Roboto, sans-serif;
         }
         .color-container{
             display: flex;
             flex-direction: row;
-            padding-top: 5px;
+            padding-top: 3.75px;
             .color {
-                margin-right: 7px;
+                margin-right: 5.25px;
                 &:last-child{
                     margin-right: 0;
                 }
@@ -179,21 +179,21 @@
         .price-wrap {
             position: absolute;
             bottom: 0;
-            left: 11px;
+            left: 8.25px;
             color: #d4494e;
             font-family: Roboto Medium, sans-serif;
             font-weight: 500;
         }
         .calc-price {
-            width: 202px;
-            height: 32px;
+            width: 151.5px;
+            height: 24px;
             box-shadow: inset 0 1px 1px rgba(11, 12, 12, 0.27);
             border: 1px solid rgba(51, 51, 51, 0.5);
             border-radius: 15px;
             display: flex;
             box-sizing: border-box;
             flex-direction: row;
-            margin-top: 24px;
+            margin-top: 18px;
            justify-content: flex-end;
         }
 
@@ -201,28 +201,28 @@
             align-self: center;
             height: 80%;
             border: none;
-            width: 112px;
-            font-size: 11px;
+            width: 84px;
+            font-size: 0.5rem;
             font-family: Roboto, sans-serif;
             color: #333333;
         }
 
         .calc-button {
-            margin-left: 15px;
-            width: 50px;
-            height: 30px;
+            margin-left: 11.25px;
+            width: 37.5px;
+            height: 22.5px;
             border-radius: 15px;
             background-color: #333333;
             font-family: 'Roboto Medium', sans-serif;
             color: #ffffff;
-            font-size: 10px;
+            font-size: 7.5px;
             cursor: pointer;
             border: none;
         }
         &__button {
-            width: 200px;
-            height: 40px;
-            margin-top: 10px ;
+            width: 150px;
+            height: 30px;
+            margin-top: 7.5px ;
         }
     }
 </style>
