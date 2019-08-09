@@ -6,11 +6,11 @@
         <transition name="popup">
             <the-popup-window v-show="isShowPopup"></the-popup-window>
         </transition>
-        <div v-show="!isShowPopupTable">
-            <the-header></the-header>
-            <the-wrapper></the-wrapper>
-            <the-footer></the-footer>
-        </div>
+
+        <the-header></the-header>
+        <the-wrapper></the-wrapper>
+        <the-footer></the-footer>
+
     </div>
 </template>
 
@@ -33,10 +33,10 @@
             TheFooter
         },
         computed: {
-            isShowPopup () {
+            isShowPopup() {
                 return this.$store.state.showModalWindow;
             },
-            isShowPopupTable () {
+            isShowPopupTable() {
                 return this.$store.state.showPopupTable;
             }
         },
@@ -54,13 +54,14 @@
     }
 
     body {
-        font-family: Roboto,sans-serif;
+        font-family: Roboto, sans-serif;
     }
 
     .popup-enter-active,
     .popup-leave-active {
         transition: opacity .5s;
     }
+
     .popup-enter, .popup-leave-to {
         opacity: 0;
     }

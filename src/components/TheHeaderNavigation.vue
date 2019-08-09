@@ -9,11 +9,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="slogan">
-                Ваш бренд
-                в ваших
-                руках
-            </div>
         </div>
     </div>
 </template>
@@ -93,15 +88,5 @@
         &:hover {
             color: #cb2026;
         }
-    }
-
-    .slogan {
-        font-family: 'Roboto Black', sans-serif;
-        font-size: 3rem;
-        color: #333333;
-        text-transform: uppercase;
-        width: 377px;
-        line-height: 72.99px;
-        align-self: flex-end;
     }
 </style>

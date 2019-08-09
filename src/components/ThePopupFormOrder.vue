@@ -20,7 +20,7 @@
             <div class="field-container">
                 <base-input-text placeholder="Иван Иванов" name="name"  required v-model="formData.name">Имя*</base-input-text>
                 <base-input-text placeholder="Телефон" name="phone" required v-model="formData.phone">Телефон*</base-input-text>
-                <base-input-text placeholder="example@mail.ru" name="mail"  v-model="formData.name">Email</base-input-text>
+                <base-input-text placeholder="example@mail.ru" name="mail" required v-model="formData.mail">Email</base-input-text>
                 <base-input-text v-if="article" disabled :value="article">Артикул заполняется автоматически</base-input-text>
                 <base-input-text v-else placeholder="Артикул"></base-input-text>
                 <base-text-area placeholder="Введите здесь">Комментарий к заказу</base-text-area>
@@ -41,7 +41,8 @@
                                 деталей заказа.`,
                 formData: {
                     name: '',
-                    phone: ''
+                    phone: '',
+                    mail: ''
                 }
             }
         },

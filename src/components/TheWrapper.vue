@@ -2,9 +2,17 @@
     <div class="wrapper">
         <div class="middle-wrapper">
             <div class="cup-wrap">
-                <img src="@/assets/img/cup-main.png" class="cup">
+                <img src="@/assets/img/cup.svg" class="cup">
             </div>
-            <base-button @click.native="openModalWindow('callback')">заказать звонок</base-button>
+            <div class="callback-container">
+                <div class="slogan">
+                    Ваш бренд
+                    в ваших
+                    руках
+                </div>
+                <base-button @click.native="openModalWindow('callback')">заказать звонок</base-button>
+            </div>
+
         </div>
         <div class="products-wrapper">
             <a name="products"></a>
@@ -27,7 +35,7 @@
 
     export default {
         name: 'the-wrapper',
-        components: {Product,TheWeWork,ThePaymentMethod},
+        components: {Product, TheWeWork, ThePaymentMethod},
         computed: {
             products() {
                 return this.$store.state.productList;
@@ -44,6 +52,7 @@
 
 <style lang="scss">
     @import "../assets/varible";
+
     .middle-wrapper {
         display: flex;
         flex-direction: column;
@@ -53,20 +62,30 @@
         height: 109px;
         position: relative;
         margin: 0 auto;
+
         .cup-wrap {
             position: absolute;
             bottom: 0;
             left: 0;
         }
+
         .cup {
             width: 24.3rem;
             height: 28.17rem;
         }
-        .button {
-            align-self: flex-end;
-            margin-right: 95px;
+
+        .callback-container {
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
         }
     }
+
     .products-wrapper {
         background: url('../assets/img/big_chemistry_bg.png') no-repeat;
         padding-top: 180px;
@@ -76,7 +95,7 @@
     .products-title {
         text-align: center;
         color: #cb2026;
-        font-family: Comfortaa,sans-serif;
+        font-family: Comfortaa, sans-serif;
         font-size: 1.875rem;
         font-weight: 400;
         text-transform: uppercase;
@@ -88,11 +107,22 @@
         display: flex;
         flex-flow: row wrap;
         margin: 0 auto;
+
         .product {
             margin: 0 21px 21px 0;
-            &:nth-child(4n){
+
+            &:nth-child(4n) {
                 margin-right: 0;
             }
         }
+    }
+
+    .slogan {
+        font-family: 'Roboto Black', sans-serif;
+        font-size: 3rem;
+        color: #333333;
+        text-transform: uppercase;
+        width: 377px;
+        line-height: 72.99px;
     }
 </style>

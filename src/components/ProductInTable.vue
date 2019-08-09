@@ -33,13 +33,14 @@
                          от {{price}} р./шт c печатью
                     </span>
                 <span v-else="">
-                        от {{calcPrice}} р. за {{count}} шт.
+                        от {{calcPrice}} р. за {{currentCount}} шт.
                     </span>
             </div>
             <div class="calc-price">
                 <input type="text" class="calc-input" v-model="inputCount" placeholder="Введите колличество">
                 <button class="calc-button" @click="setCount()">Расчет</button>
             </div>
+            <base-button class="product__button" @click="formOrder()">Заказать</base-button>
         </div>
     </div>
 </template>
@@ -87,6 +88,11 @@
             },
             isInputCalc() {
                 return this.count > 1;
+            },
+            formOrder() {
+                this.$store.state.basket = this.product;
+                this.$store.dispatch('showModalWindow', true);
+                this.$store.dispatch('setCurrentModalForm', 'order');
             }
         },
         computed: {
@@ -99,7 +105,7 @@
             price() {
                 return this.product.price;
             },
-            count() {
+            currentCount() {
                 return this.product.count;
             }
         },
@@ -118,6 +124,9 @@
     .product {
         display: flex;
         flex-direction: row;
+        &__button {
+            margin-top: 20px;
+        }
     }
 
     .photo-wrap {
@@ -198,8 +207,8 @@
     }
 
     .calc-price {
-        width: 151.5px;
-        height: 24px;
+        width: 200px;
+        height: 34px;
         box-shadow: inset 0 1px 1px rgba(11, 12, 12, 0.27);
         border: 1px solid rgba(51, 51, 51, 0.5);
         border-radius: 15px;
@@ -207,15 +216,16 @@
         box-sizing: border-box;
         flex-direction: row;
         margin-top: 18px;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     .calc-input {
         align-self: center;
         height: 80%;
         border: none;
-        width: 84px;
-        font-size: 8.25px;
+        margin-left: 10px;
+        width: 70%;
+        font-size: 0.7rem;
         font-family: Roboto, sans-serif;
         color: #333333;
     }
@@ -223,7 +233,7 @@
     .calc-button {
         margin-left: 11.25px;
         width: 37.5px;
-        height: 22.5px;
+        height: 100%;
         border-radius: 15px;
         background-color: #333333;
         font-family: 'Roboto Medium', sans-serif;
@@ -231,6 +241,7 @@
         font-size: 10px;
         cursor: pointer;
         border: none;
+        outline: none;
     }
 
 </style>

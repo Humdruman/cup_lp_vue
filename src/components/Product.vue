@@ -7,7 +7,7 @@
             <div class="article-wrap">
                 Артикул: {{product.article}}
             </div>
-            <div class="description">
+            <div class="description" @click="showPopupTable()">
                 {{product.description}}
             </div>
             <div class="properties-container">
@@ -31,7 +31,7 @@
                          от {{price}} р./шт c печатью
                     </span>
                     <span v-else="">
-                        от {{calcPrice}} р. за {{count}} шт.
+                        от {{calcPrice}} р. за {{getCount}} шт.
                     </span>
 
                 </div>
@@ -77,7 +77,7 @@
             price() {
                 return this.product.price;
             },
-            count() {
+            getCount() {
                 return this.product.count;
             }
         },
@@ -151,6 +151,7 @@
         }
 
         .description {
+            cursor: pointer;
             font-family: Roboto, sans-serif;
             font-size: 0.66rem;
             font-weight: bold;
@@ -179,6 +180,7 @@
         .price-wrap {
             position: absolute;
             bottom: 0;
+            font-size: 0.8rem;
             left: 8.25px;
             color: #d4494e;
             font-family: Roboto Medium, sans-serif;

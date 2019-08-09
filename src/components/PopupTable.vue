@@ -79,10 +79,12 @@
     @import "../assets/varible";
 
     .popup-table {
-        width: 100%;
-        background: white;
+        width: 90%;
+        position: fixed;
+        margin: 0 auto;
+        z-index: 10;
         height: 1200px;
-        background: url('../assets/img/big_chemistry_bg.png') no-repeat;
+        background-color: white;
     }
 
     .container {
@@ -96,7 +98,7 @@
         color: #333333;
         font-family: Roboto, sans-serif;
         font-weight: 400;
-        font-size: 11.25px;
+        font-size: 12.25px;
         .row.font-weight-bold {
             color: #333333;
             font-family: "Roboto Black", sans-serif;
