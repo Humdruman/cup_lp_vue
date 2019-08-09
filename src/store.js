@@ -12,7 +12,9 @@ export default new Vuex.Store({
         currentModalForm: '',
         currentTableProduct: {},
         productList: [],
-        basket: {},
+        count: 1,
+        basket: {
+        },
         popupMsg: '',
         totalPrice: 0
     },
@@ -29,9 +31,6 @@ export default new Vuex.Store({
                 modalFormName = 'the-popup-form-' + modalFormName;
             }
             state.currentModalForm = modalFormName;
-        },
-        SET_TOTAL_PRICE(state, price) {
-            state.totalPrice
         },
         SET_CURRENT_TABLE_PRODUCT(state, product) {
             state.currentTableProduct = product;

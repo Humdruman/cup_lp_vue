@@ -91,6 +91,7 @@
             },
             formOrder() {
                 this.$store.state.basket = this.product;
+                this.$store.state.count = this.count;
                 this.$store.dispatch('showModalWindow', true);
                 this.$store.dispatch('setCurrentModalForm', 'order');
             }
@@ -106,7 +107,7 @@
                 return this.product.price;
             },
             currentCount() {
-                return this.product.count;
+                return this.count;
             }
         },
         show: {

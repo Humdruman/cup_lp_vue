@@ -1,6 +1,7 @@
 <template>
     <div class="popup-table">
-        <div class="container">
+        <div class="opacity-bg" @click="closeTable();"></div>
+        <div class="container popup-table__container">
             <div class="current-product-wrap">
                 <product-in-table :product="currentProduct"></product-in-table>
             </div>
@@ -67,8 +68,12 @@
             isCurrent(product) {
                 return (this.$store.state.currentTableProduct === product);
             },
-            setCurrentProduct(product){
+            setCurrentProduct(product) {
                 this.$store.dispatch('setCurrentProductTable', product);
+            },
+            closeTable() {
+                this.$store.dispatch('showPopupTable', false);
+                setTimeout(this.scroll, 1000);
             }
         }
 
@@ -79,18 +84,25 @@
     @import "../assets/varible";
 
     .popup-table {
-        width: 90%;
+        width: 100%;
         position: fixed;
-        margin: 0 auto;
         z-index: 10;
-        height: 1200px;
-        background-color: white;
+        overflow-y: scroll;
+        height: 1250px;
+        &__container {
+            width: 80%;
+            position: relative;
+            z-index: 12;
+            padding: 15px;
+            min-height: 1450px;
+            background: white;
+        }
+
     }
 
     .container {
         padding: 18.75px;
         max-width: $max-width;
-        margin: 0 auto;
     }
 
     .table {
@@ -108,7 +120,7 @@
             font-weight: bold;
             cursor: default;
         }
-        .row:not(.title){
+        .row:not(.title) {
             cursor: pointer;
         }
         & > .row {
@@ -120,7 +132,7 @@
         }
 
         .product {
-            &.row{
+            &.row {
                 background: white;
             }
             .cl-1 {
@@ -155,5 +167,14 @@
                 margin-left: 0;
             }
         }
+    }
+
+    .opacity-bg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #333333;
+        opacity: 0.7;
+        z-index: 10;
     }
 </style>
