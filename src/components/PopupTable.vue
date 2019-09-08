@@ -1,6 +1,7 @@
 <template>
     <div class="popup-table">
-        <div class="container">
+        <div class="opacity-bg" @click="closeTable();"></div>
+        <div class="container popup-table__container">
             <div class="current-product-wrap">
                 <product-in-table :product="currentProduct"></product-in-table>
             </div>
@@ -79,7 +80,7 @@
     @import "../assets/varible";
 
     .popup-table {
-        width: calc($max-width - 10%);
+        width: 90%;
         position: fixed;
         margin: 0 auto;
         z-index: 10;

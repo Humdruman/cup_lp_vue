@@ -17,7 +17,9 @@ export default new Vuex.Store({
         currentModalForm: '',
         currentTableProduct: {},
         productList: [],
-        basket: {},
+        count: 1,
+        basket: {
+        },
         popupMsg: '',
         totalPrice: 0
     },

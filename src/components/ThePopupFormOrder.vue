@@ -17,15 +17,22 @@
             </div>
         </div>
         <form class="form" action="#" @submit.prevent="submit();" v-show="!isSuccess">
+
             <div class="field-container">
-                <base-input-text placeholder="Иван Иванов" name="name"  required v-model="formData.name">Имя*</base-input-text>
-                <base-input-text placeholder="Телефон" name="phone" required v-model="formData.phone">Телефон*</base-input-text>
-                <base-input-text placeholder="example@mail.ru" name="mail" required v-model="formData.mail">Email</base-input-text>
-                <base-input-text v-if="article" disabled :value="article">Артикул заполняется автоматически</base-input-text>
+                <base-input-text placeholder="Иван Иванов" name="name" required v-model="formData.name">Имя*
+                </base-input-text>
+                <base-input-text placeholder="Телефон" name="phone" required v-model="formData.phone">Телефон*
+                </base-input-text>
+                <base-input-text placeholder="example@mail.ru" name="mail" required v-model="formData.mail">Email
+                </base-input-text>
+                <base-input-text v-if="article" disabled :value="article">Артикул заполняется автоматически
+                </base-input-text>
                 <base-input-text v-else placeholder="Артикул"></base-input-text>
+                <base-input-text :value="count">Количество</base-input-text>
                 <base-text-area placeholder="Введите здесь">Комментарий к заказу</base-text-area>
             </div>
-            <base-button class="form__button"> </base-button>
+
+            <base-button class="form__button"></base-button>
         </form>
     </div>
 </template>
@@ -50,8 +57,11 @@
             description() {
                 return this.$store.state.basket.description;
             },
-            article(){
+            article() {
                 return this.$store.state.basket.article;
+            },
+            count() {
+                return this.$store.state.count;
             }
         },
         methods: {
@@ -90,6 +100,7 @@
         right: 8px;
         cursor: pointer;
     }
+
     .success-msg {
         width: 275px;
         margin: 0 auto;
@@ -100,11 +111,13 @@
         font-weight: 500;
         text-align: center;
     }
+
     .description-wrap {
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .description {
         margin-top: 22px;
         color: #333333;
@@ -114,6 +127,7 @@
         font-weight: 500;
         letter-spacing: 0.16px;
     }
+
     .form {
         display: flex;
         flex-direction: column;
@@ -124,6 +138,7 @@
             width: 167px;
         }
     }
+
     .field-container {
         display: flex;
         flex-direction: column;

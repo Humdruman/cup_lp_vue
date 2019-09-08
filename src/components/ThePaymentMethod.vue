@@ -46,6 +46,9 @@
         height: 551.25px;
         position: relative;
     }
+    .text {
+        text-align: center;
+    }
     .bg {
         bottom: 0;
         width: 100%;
