@@ -7,6 +7,11 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        baseUrl: 'http://localhost:8080/wp-json/',
+        authData: {
+          user: 'admin',
+          password: '309854'
+        },
         showModalWindow: false,
         showPopupTable: false,
         currentModalForm: '',
@@ -20,18 +25,15 @@ export default new Vuex.Store({
         SHOW_MODAL_WINDOW(state, isShow) {
             state.showModalWindow = isShow;
         },
-        SHOW_POPUP_TABLE(state, isShow){
+        SHOW_POPUP_TABLE(state, isShow) {
             state.showPopupTable = isShow;
         },
         SET_CURRENT_MODAL_FORM(state, modalFormName) {
 
-            if(modalFormName === 'callback' || modalFormName === 'order'){
+            if (modalFormName === 'callback' || modalFormName === 'order') {
                 modalFormName = 'the-popup-form-' + modalFormName;
             }
             state.currentModalForm = modalFormName;
-        },
-        SET_TOTAL_PRICE(state, price) {
-            state.totalPrice
         },
         SET_CURRENT_TABLE_PRODUCT(state, product) {
             state.currentTableProduct = product;
@@ -43,7 +45,7 @@ export default new Vuex.Store({
             });
             state.currentTableProduct = state.productList[0];
         },
-        UPDATE_PRODUCT_PHOTO(state, setting){
+        UPDATE_PRODUCT_PHOTO(state, setting) {
             state.productList[setting.index].photoPath = setting.path;
             state.productList[setting.index].baseColor = setting.name;
         },
@@ -68,7 +70,7 @@ export default new Vuex.Store({
             commit('SET_CURRENT_TABLE_PRODUCT', product)
         },
 
-        fetchProducts({commit}){
+        fetchProducts({commit}) {
             commit('FETCH_PRODUCTS');
         },
 
@@ -76,8 +78,26 @@ export default new Vuex.Store({
             commit('UPDATE_PRODUCT_PHOTO', setting);
         },
 
-        setPopupMessage({commit}, msg){
+        setPopupMessage({commit}, msg) {
             commit('SET_POPUP_MESSAGE', msg);
+        },
+        sendFeedBackForm({state}, request) {
+            console.log(request);
+            axios({
+                method: 'post',
+                baseURL: state.baseUrl,
+                url: 'feedback/v1/add',
+                data: request,
+                auth: {
+                    username: state.authData.user,
+                    password: state.authData.password
+                }
+            }).then((resp) => {
+                console.log(resp)
+            }).catch((err) => {
+                console.error(err);
+            })
+
         }
     }
 })

@@ -11,10 +11,10 @@
         <div class="success-msg" v-show="isSuccess">
             {{successMessage}}
         </div>
-        <form class="form" action="#" @submit.prevent="submit();" v-show="!isSuccess">
+        <form class="form" action="#" @submit="submit" v-show="!isSuccess">
             <div class="field-container">
-                <base-input-text placeholder="Иван Иванов" name="name"  required v-model="formData.name">Имя*</base-input-text>
-                <base-input-text placeholder="Телефон" name="phone" required v-model="formData.phone">Телефон*</base-input-text>
+                <base-input-text placeholder="Иван Иванов" name="feedback_name"  required v-model="formData.name">Имя*</base-input-text>
+                <base-input-text placeholder="Телефон" name="feedback_phone" required v-model="formData.phone">Телефон*</base-input-text>
             </div>
             <base-button class="form__button"> </base-button>
         </form>
@@ -41,6 +41,9 @@
                 this.$store.dispatch('showModalWindow', false);
             },
             submit(e) {
+                e.preventDefault();
+                let form = e.target;
+                this.$store.dispatch('sendFeedBackForm', new FormData(form));
                 this.isSuccess = true;
             }
         }

@@ -3,7 +3,7 @@
         <span class="field-description">
             <slot></slot>
         </span>
-        <input class="input" :value='value' name="name" v-bind="$attrs" v-on="inputListeners">
+        <input class="input" :value='value'  v-bind="$attrs" v-on="inputListeners">
     </div>
 </template>
 

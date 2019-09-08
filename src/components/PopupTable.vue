@@ -79,7 +79,7 @@
     @import "../assets/varible";
 
     .popup-table {
-        width: 90%;
+        width: calc($max-width - 10%);
         position: fixed;
         margin: 0 auto;
         z-index: 10;
