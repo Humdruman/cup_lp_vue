@@ -1,8 +1,11 @@
 <?php
 
-require_once 'vendor/autoload.php';
 require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+require_once ('lib/app/Register.php');
+use App\Register;
 
+
+Register::registerProductType();
 
 
 add_action('init', 'formFeedback');
